@@ -1,0 +1,37 @@
+a {
+  color: #444444;
+}
+
+body {
+  background-image: url('bg/geometry/geometry/geometry.png');
+  color: #333333;
+  margin: 0px; 
+}
+
+header {
+  border-top: 4px solid #333333;
+}
+
+footer {
+  border-bottom: 5px solid #333333;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.header-name {
+  margin: 15px;
+}
+
+.footer-info {
+  margin: 15px;
+}
+
+.main {
+  padding: 10px;
+}
+
