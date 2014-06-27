@@ -4,34 +4,33 @@ a {
 
 body {
   background-image: url('bg/geometry/geometry/geometry.png');
+  border-top: 6px solid #333;
   color: #333333;
-  margin: 0px; 
-}
-
-header {
-  border-top: 4px solid #333333;
+  margin: 0px;
 }
 
 footer {
-  border-bottom: 5px solid #333333;
   bottom: 0;
+  border-bottom: 6px solid #333;
   position: absolute;
   width: 100%;
 }
 
-li {
+footer ul {
+  padding: 0px;
+  margin: 15px;
+}
+
+footer li {
   list-style: none;
+  display: inline;
 }
 
-.header-name {
+#wrapper {
   margin: 15px;
 }
 
-.footer-info {
-  margin: 15px;
-}
-
-.main {
+#main {
   padding: 10px;
 }
 
