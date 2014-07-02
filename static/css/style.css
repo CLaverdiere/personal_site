@@ -3,7 +3,7 @@ a {
 }
 
 body {
-  background-image: url('bg/geometry/geometry/geometry.png');
+  background-image: url('/static/bg/geometry/geometry/geometry.png');
   border-top: 6px solid #333;
   color: #333333;
   margin: 0px;
