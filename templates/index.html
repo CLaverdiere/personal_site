@@ -1,56 +1,26 @@
-<!DOCTYPE HTML>
+{% extends "app.html" %}
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+{% block content %}
+  <div id="main">
 
-  <title>Chris Laverdiere's Site</title>
-  <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
-</head>
-
-<body>
-
-  <div id="wrapper">
-    <header>
-      <div id="header-name">
-        <h1>Chris Laverdiere</h1>
-      </div>
-    </header>
-
-    <div id="main">
-
-      <div id="programming">
-        <h2>Programming</h2>
-        <ul>
-          <li><a href="#" >Android Othello</a></li>
-          <li><a href="#" >Fractal Art</a></li>
-          <li><a href="#" >Raytracer in C++</a></li>
-          <li><a href="#" >Top-down HTML5 Shooter</a></li>
-        </ul>
-      </div>
-
-      <div id="books">
-        <h2>Reading</h2>
-        <ul>
-          <li>The Code Book</li>
-          <li>Fermat's Enigma</li>
-          <li>Masters of Doom</li>
-          <li>The Pragmatic Programmer</li>
-        </ul>
-      </div>
-
+    <div id="programming" class="main-item">
+      <h2>Programming</h2>
+      <ul>
+        <li><a href="/404" >Android Othello</a></li>
+        <li><a href="https://github.com/CLaverdiere/Fractals">Fractal Art</a></li>
+        <li><a href="/404" >Raytracer in C++</a></li>
+        <li><a href="https://github.com/CLaverdiere/Four-to-the-Fifth">Top-down HTML5 Shooter</a></li>
+      </ul>
     </div>
+
+    <div id="books" class="main-item">
+      <h2>Reading</h2>
+      <ul>
+        {% for book in books %}
+          <li><a href="http://en.wikipedia.org/wiki/{{ book }}">{{ book }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
   </div>
-
-  <footer>
-    <ul id="footer-info">
-      <li style="color: red">SITE UNDER CONSTRUCTION</li> |
-      <li> <a href="https://github.com/CLaverdiere">Github</a> </li>
-      <li> <a href="https://bitbucket.org/CMLaverdiere">Bitbucket</a> </li>
-      <li> <a href="https://twitter.com/cmlaverdiere">Twitter</a> </li>
-
-    </ul>
-  </footer>
-
-</body>
-
-<!-- Don't even bother looking here, not hiding anything cool, I swear. -->
+{% endblock %}

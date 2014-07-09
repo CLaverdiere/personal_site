@@ -34,3 +34,16 @@ footer li {
   padding: 10px;
 }
 
+.incognito-link {
+  text-decoration: none;
+}
+
+.main-item {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.notice {
+  color: red;
+  font-weight: bold;
+}
