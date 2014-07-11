@@ -9,24 +9,12 @@
 
 <body>
   <div id="wrapper">
-    <header>
-      <div id="header-name">
-        <h1><a class="incognito-link" href="/">Chris Laverdiere</a></h1>
-        <hr>
-      </div>
-    </header>
+    {% include 'header.html' %}
 
     {% block content %} {% endblock %}
   </div>
 </body>
 
-<footer>
-  <ul id="footer-info">
-    <li> <a href="https://github.com/CLaverdiere">Github</a> </li>
-    <li> <a href="https://bitbucket.org/CMLaverdiere">Bitbucket</a> </li>
-    <li> <a href="https://twitter.com/cmlaverdiere">Twitter</a> </li>
-    <p class="notice">SITE UNDER CONSTRUCTION</p>
-  </ul>
-</footer>
+{% include 'footer.html' %}
 
 <!-- Not hiding anything cool here, I swear. -->

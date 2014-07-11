@@ -9,6 +9,17 @@ body {
   margin: 0px;
 }
 
+header li {
+  display: inline;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+header ul {
+  margin: 5px;
+  padding: 0px;
+}
+
 footer {
   bottom: 0;
   border-bottom: 6px solid #333;
