@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, g
+from os import listdir
+
 app = Flask(__name__)
 
 # App settings
@@ -6,6 +8,11 @@ app.config.from_object(__name__)
 app.config.update(dict(
     DEBUG=True,
 ))
+
+# Backgrounds
+@app.before_request
+def load_bgs():
+    g.bgs = [bg for bg in listdir("static/bg") if bg.endswith(".png")]
 
 @app.route('/')
 def root():
