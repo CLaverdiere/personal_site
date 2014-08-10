@@ -1,6 +1,8 @@
 from collections import OrderedDict
 from flask import Flask, render_template, g
+from itertools import islice
 from os import listdir
+from string import rstrip
 
 app = Flask(__name__)
 
@@ -10,6 +12,10 @@ app.config.update(dict(
     DEBUG=True,
 ))
 
+class Project:
+    def __init__(self, name, link, desc):
+        self.name, self.link, self.desc = name, link, desc
+
 # Backgrounds
 @app.before_request
 def load_bgs():
@@ -18,10 +24,15 @@ def load_bgs():
 @app.route('/')
 def root():
     with open("static/content/projects.txt") as project_file:
-        projects = OrderedDict()
-        for line in project_file:
-            name, link = line.partition('=')[::2]
-            projects[name] = link
+        projects = list()
+        while True:
+            project_info = [s.rstrip() for s in islice(project_file, 4)]
+            if not project_info:
+                break
+            name, link, desc = project_info[:3]
+            project = Project(name, link, desc)
+            projects.append(project)
+
     with open("static/content/books.txt") as book_file:
         books = book_file.readlines()
     return render_template('index.html', projects=projects, books=books)

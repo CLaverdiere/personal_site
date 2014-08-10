@@ -1,6 +1,23 @@
-Android Othello        = None
-Fractal Art            = https://github.com/CLaverdiere/Fractals
-GFXHub                 = http://gfxhub.herokuapp.com
-Raytracer in C++       = None
-SLMobileMech           = http://slmm.herokuapp.com/
-Top-down HTML5 Shooter = http://userpages.umbc.edu/~chlaver1/Four-to-the-Fifth/game.html
+Android Othello
+  None
+  An android rendition of the classic board game Othello. Will open-source soon.
+
+Four to the Fifth
+  http://userpages.umbc.edu/~chlaver1/Four-to-the-Fifth/game.html
+  A top-down shooter game using the HTML5 Quintus game engine.
+
+Fractal Art
+  https://github.com/CLaverdiere/Fractals
+  Algorithmically generated images of fractals and other patterns in math.
+
+GFXHub
+  http://gfxhub.herokuapp.com
+  A site to host a wide range of computer generated graphics.
+
+Raytracer in C++
+  None
+  A raytracer supporting basic shading, shadows, reflections, etc. Will open-source soon.
+
+SLMobileMech
+  http://slmm.herokuapp.com/
+  Website for my brother's mobile car mechanic business.

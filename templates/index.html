@@ -6,8 +6,10 @@
     <div id="programming" class="main-item">
       <h2>Programming</h2>
       <ul>
-      {% for name, link in projects.items() %}
-        <li><a href="{{ link }}" >{{ name }}</a></li>
+      {% for p in projects %}
+        <li><a href="{{ p.link }}" >{{ p.name }}</a></li>
+        <small>{{ p.desc }}</small>
+        <br /> <br />
       {% endfor %}
       </ul>
     </div>
