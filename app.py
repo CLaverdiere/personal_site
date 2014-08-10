@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from flask import Flask, render_template, g
 from os import listdir
 
@@ -16,9 +17,14 @@ def load_bgs():
 
 @app.route('/')
 def root():
-    with open("static/content/books.txt") as bookfile:
-        books = bookfile.readlines()
-    return render_template('index.html', books=books)
+    with open("static/content/projects.txt") as project_file:
+        projects = OrderedDict()
+        for line in project_file:
+            name, link = line.partition('=')[::2]
+            projects[name] = link
+    with open("static/content/books.txt") as book_file:
+        books = book_file.readlines()
+    return render_template('index.html', projects=projects, books=books)
 
 @app.route('/about')
 def about():

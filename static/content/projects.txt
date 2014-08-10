@@ -1,0 +1,6 @@
+Android Othello        = None
+Fractal Art            = https://github.com/CLaverdiere/Fractals
+GFXHub                 = http://gfxhub.herokuapp.com
+Raytracer in C++       = None
+SLMobileMech           = http://slmm.herokuapp.com/
+Top-down HTML5 Shooter = http://userpages.umbc.edu/~chlaver1/Four-to-the-Fifth/game.html
