@@ -6,10 +6,11 @@
     <div id="programming" class="main-item">
       <h2>Programming</h2>
       <ul>
-        <li><a href="/404" >Android Othello</a></li>
-        <li><a href="https://github.com/CLaverdiere/Fractals">Fractal Art</a></li>
-        <li><a href="/404" >Raytracer in C++</a></li>
-        <li><a href="https://github.com/CLaverdiere/Four-to-the-Fifth">Top-down HTML5 Shooter</a></li>
+      {% for p in projects %}
+        <li><a href="{{ p.link }}" >{{ p.name }}</a></li>
+        <small>{{ p.desc }}</small>
+        <br /> <br />
+      {% endfor %}
       </ul>
     </div>
 

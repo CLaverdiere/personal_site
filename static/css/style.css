@@ -73,6 +73,7 @@ footer li {
 .main-item {
   display: inline-block;
   margin-right: 50px;
+  vertical-align: top;
 }
 
 .notice {
