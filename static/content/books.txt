@@ -1,4 +1,6 @@
+Code Complete
 Fermat's Enigma
+Hard-Boiled Wonderland
 Learn You a Haskell for Great Good
 Masters of Doom
 The Code Book
