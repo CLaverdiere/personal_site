@@ -6,13 +6,17 @@ app = Flask(__name__)
 # App settings
 app.config.from_object(__name__)
 app.config.update(dict(
+    BGIMAGES=False,
     DEBUG=True,
 ))
 
 # Backgrounds
 @app.before_request
 def load_bgs():
-    g.bgs = [bg for bg in listdir("static/bg") if bg.endswith(".png")]
+    if app.config['BGIMAGES'] == True:
+        g.bgs = [bg for bg in listdir("static/bg") if bg.endswith("texture.png")]
+    else:
+        g.bgs = []
 
 @app.route('/')
 def root():

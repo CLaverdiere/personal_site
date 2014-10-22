@@ -1,11 +1,33 @@
+/* Solarized colors from: http://thomasf.github.io/solarized-css/ */
+
+html {
+  background-color: #002b36;
+  color: #839496;
+}
+
 a {
-  color: #444444;
+  color: #b58900;
+}
+
+a:visited {
+  color: #cb4b16;
+}
+
+a:hover {
+  color: #cb4b16;
 }
 
 body {
-  border-top: 6px solid #333;
-  color: #333333;
+  background-color: #002b36;
+  border-top: 6px solid #002b36;
   margin: 0px;
+}
+
+body:after {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: rgba(5,25,42,0.5);
+    z-index:1;
 }
 
 header li {
@@ -21,7 +43,7 @@ header ul {
 
 footer {
   bottom: 0;
-  border-bottom: 6px solid #333;
+  border-bottom: 6px solid #002b36;
   position: absolute;
   width: 100%;
 }
@@ -54,6 +76,6 @@ footer li {
 }
 
 .notice {
-  color: red;
+  color: #c5cbd3;
   font-weight: bold;
 }
