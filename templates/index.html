@@ -7,7 +7,11 @@
       <h2>Programming</h2>
       <ul>
       {% for p in projects %}
-        <li><a href="{{ p.link }}" >{{ p.name }}</a></li>
+        {% if 'None' not in p.link %}
+          <li><a href="{{ p.link }}" >{{ p.name }}</a></li>
+        {% else %}
+          <li>{{ p.name }}</li>
+        {% endif %}
         <small>{{ p.desc }}</small>
         <br /> <br />
       {% endfor %}
