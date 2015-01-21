@@ -1,7 +1,9 @@
 Code Complete
 Fermat's Enigma
+Godel, Escher, Bach
 Hard-Boiled Wonderland
 Learn You a Haskell for Great Good
 Masters of Doom
+Surely You're Joking, Mr. Feynman!
 The Code Book
 The Pragmatic Programmer

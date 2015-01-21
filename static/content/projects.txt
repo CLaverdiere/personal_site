@@ -14,6 +14,10 @@ GFXHub
   http://gfxhub.herokuapp.com
   A site to host a wide range of computer generated graphics.
 
+Pantry
+  https://app-pantry.herokuapp.com/
+  An app for sharing groceries with your neighbor.
+
 Raytracer in C++
   None
   A raytracer supporting basic shading, shadows, reflections, etc. Will open-source soon.
