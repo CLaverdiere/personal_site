@@ -2,6 +2,10 @@ Android Othello
   None
   An android rendition of the classic board game Othello. Will open-source soon.
 
+Bebop Compiler
+  https://github.com/CLaverdiere/bebop
+  A compiler for the bebop programming language.
+
 Four to the Fifth
   http://userpages.umbc.edu/~chlaver1/Four-to-the-Fifth/game.html
   A top-down shooter game using the HTML5 Quintus game engine.
